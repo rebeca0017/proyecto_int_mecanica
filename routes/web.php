@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/placas','MecanicaController@Placas');
+Route::post('/usuarios','MecanicaController@Usuarios');
+Route::get('/horario/citas','MecanicaController@CitasDisponibles')→name('citas');
+
